@@ -38,7 +38,7 @@ def generate_response(intent: str, knowledge: dict) -> str:
 
 
 if __name__ == "__main__":
-    from intent_detector import get_knowledge
+    from knowledge_manager import get_knowledge
 
     test_intents = [
         "GREETING",

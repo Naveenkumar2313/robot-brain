@@ -1,63 +1,54 @@
 import json
 import os
 
-BASE = os.path.join(os.path.dirname(__file__), '..', 'knowledge')
+# Load intents once
+INTENTS_PATH = os.path.join(os.path.dirname(__file__), '..', 'intents', 'intents.json')
 
-def _load(filename):
-    with open(os.path.join(BASE, filename), 'r') as f:
-        return json.load(f)
+with open(INTENTS_PATH, 'r') as f:
+    INTENTS_DATA = json.load(f)['intents']
 
-def get_knowledge(intent: str) -> dict:
-    company  = _load('company.json')
-    college  = _load('college.json')
-    faqs     = _load('faq.json')
 
-    mapping = {
-        "COMPANY_NAME":         {"key": "name",          "data": company,  "label": "Company Name"},
-        "COMPANY_SERVICES":     {"key": "services",      "data": company,  "label": "Services"},
-        "COMPANY_VISION":       {"key": "vision",        "data": company,  "label": "Vision"},
-        "COMPANY_MISSION":      {"key": "mission",       "data": company,  "label": "Mission"},
-        "COMPANY_PRODUCTS":     {"key": "products",      "data": company,  "label": "Products"},
-        "COMPANY_TEAM":         {"key": "founders",      "data": company,  "label": "Founders"},
-        "WORKSHOPS":            {"key": "workshops",     "data": company,  "label": "Workshops"},
-        "COLLEGE_INFO":         {"key": "name",          "data": college,  "label": "College"},
-        "COLLEGE_PRINCIPAL":    {"key": "principal",     "data": college,  "label": "Principal"},
-        "COLLEGE_DEPARTMENTS":  {"key": "departments",   "data": college,  "label": "Departments"},
-        "COLLEGE_FACILITIES":   {"key": "facilities",    "data": college,  "label": "Facilities"},
-        "COLLEGE_PLACEMENTS":   {"key": "placements",    "data": college,  "label": "Placements"},
-        "COLLEGE_COURSES":      {"key": "courses",       "data": college,  "label": "Courses"},
-        "COLLEGE_FACULTY":      {"key": "faculty",       "data": college,  "label": "Faculty"},
-    }
+def detect_intent(user_input: str) -> tuple[str, float]:
+    text = user_input.lower().strip()
+    
+    best_intent = "UNKNOWN"
+    best_score = 0.0
 
-    if intent not in mapping:
-        return {"found": False, "intent": intent}
+    for intent, data in INTENTS_DATA.items():
+        if intent == "UNKNOWN":
+            continue
+        
+        keywords = data.get("keywords", [])
+        hits = sum(1 for kw in keywords if kw in text)
+        
+        if hits == 0:
+            continue
+        
+        score = hits / len(keywords)
+        
+        if hits > best_score or (hits == best_score and score > 0):
+            best_intent = intent
+            best_score = hits
 
-    entry = mapping[intent]
-    value = entry["data"].get(entry["key"], None)
-
-    return {
-        "found": True,
-        "intent": intent,
-        "label": entry["label"],
-        "value": value
-    }
+    return best_intent, best_score
 
 
 if __name__ == "__main__":
-    test_intents = [
-        "COMPANY_SERVICES",
-        "COMPANY_VISION",
-        "WORKSHOPS",
-        "COLLEGE_PLACEMENTS",
-        "COLLEGE_DEPARTMENTS",
-        "UNKNOWN"
+    test_questions = [
+        "Hello there",
+        "What services do you provide?",
+        "Tell me about placements",
+        "Who are the founders?",
+        "What workshops do you conduct?",
+        "What is the vision of PyGenicArc?",
+        "Who is the principal?",
+        "What courses are available?",
+        "Goodbye",
+        "What is the meaning of life?"
     ]
 
-    for intent in test_intents:
-        result = get_knowledge(intent)
-        print(f"\nIntent : {result['intent']}")
-        if result['found']:
-            print(f"Label  : {result['label']}")
-            print(f"Value  : {result['value']}")
-        else:
-            print("Result : No knowledge found.")
+    print(f"{'Question':<45} {'Intent':<25} {'Score'}")
+    print("-" * 80)
+    for q in test_questions:
+        intent, score = detect_intent(q)
+        print(f"{q:<45} {intent:<25} {score:.2f}")
