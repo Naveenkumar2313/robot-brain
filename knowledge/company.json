@@ -1,0 +1,29 @@
+{
+    "name": "PyGenicArc",
+    "tagline": "Launch. Learn. Lead.",
+    "founded": "2024",
+    "vision": "To revolutionize education through technology.",
+    "mission": "To build scalable EdTech solutions for institutions and learners.",
+    "services": [
+        "DSA Learning Platform",
+        "Virtual Labs",
+        "Administration Portal",
+        "Automated Marks Attainment System"
+    ],
+    "products": [
+        "Codorythm"
+    ],
+    "workshops": [
+        "IoT",
+        "Python Programming",
+        "Web Development",
+        "Robotics"
+    ],
+    "achievements": [
+        "Deployed EdTech platform across multiple institutions"
+    ],
+    "location": "Bengaluru, Karnataka, India",
+    "founders": [
+        "Add founder names here"
+    ]
+}

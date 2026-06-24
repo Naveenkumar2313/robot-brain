@@ -1,0 +1,97 @@
+{
+    "GREETING": [
+        "Hello! I am PyGenicArc's interactive robot. How can I help you today?",
+        "Hi there! Welcome to PyGenicArc. What would you like to know?",
+        "Good to see you! I am here to answer your questions about PyGenicArc and the college.",
+        "Greetings! Feel free to ask me anything about PyGenicArc or the college."
+    ],
+    "GOODBYE": [
+        "Goodbye! Have a wonderful day!",
+        "It was great talking to you. See you soon!",
+        "Take care! Feel free to come back anytime.",
+        "Farewell! Hope I was helpful today."
+    ],
+    "THANK_YOU": [
+        "You're welcome!",
+        "Happy to help!",
+        "Glad I could assist you.",
+        "Anytime! Feel free to ask more questions."
+    ],
+    "COMPANY_NAME": [
+        "We are {value}, an EdTech startup based in Bengaluru.",
+        "{value} is a technology company focused on revolutionizing education.",
+        "The company you are interacting with is {value}, proudly based in Bengaluru."
+    ],
+    "COMPANY_SERVICES": [
+        "PyGenicArc currently provides {value}.",
+        "Our key offerings include {value}.",
+        "We specialize in delivering {value} to educational institutions.",
+        "Some of our major services are {value}."
+    ],
+    "COMPANY_VISION": [
+        "Our vision is: {value}",
+        "PyGenicArc envisions: {value}",
+        "We are driven by a clear vision — {value}"
+    ],
+    "COMPANY_MISSION": [
+        "Our mission is: {value}",
+        "At PyGenicArc, our mission is to {value}",
+        "We are on a mission — {value}"
+    ],
+    "COMPANY_PRODUCTS": [
+        "Our flagship products include {value}.",
+        "PyGenicArc has built {value} for learners and institutions.",
+        "We have developed {value} as part of our EdTech suite."
+    ],
+    "COMPANY_TEAM": [
+        "PyGenicArc was founded by {value}.",
+        "The brilliant minds behind PyGenicArc are {value}.",
+        "Our founding team includes {value}."
+    ],
+    "WORKSHOPS": [
+        "We conduct workshops in {value}.",
+        "PyGenicArc offers hands-on training in {value}.",
+        "Our workshop programs cover {value}.",
+        "Students can enroll in our workshops on {value}."
+    ],
+    "COLLEGE_INFO": [
+        "The college associated with PyGenicArc is {value}.",
+        "We are proud to be associated with {value}.",
+        "PyGenicArc works closely with {value}."
+    ],
+    "COLLEGE_PRINCIPAL": [
+        "The principal of the college is {value}.",
+        "{value} is the principal heading this institution.",
+        "The college is led by {value}."
+    ],
+    "COLLEGE_DEPARTMENTS": [
+        "The college offers the following departments: {value}.",
+        "Students can choose from departments like {value}.",
+        "The institution has well-established departments including {value}."
+    ],
+    "COLLEGE_FACILITIES": [
+        "The college provides excellent facilities including {value}.",
+        "Students have access to {value} on campus.",
+        "Campus facilities include {value}."
+    ],
+    "COLLEGE_PLACEMENTS": [
+        "The college has achieved a placement rate of {rate}, with top companies like {companies} recruiting students.",
+        "Our placement record stands strong at {rate}. Companies like {companies} actively recruit from here.",
+        "With a {rate} placement rate, the college sees recruiters from {companies} every year."
+    ],
+    "COLLEGE_COURSES": [
+        "The college offers courses in {value}.",
+        "Students can pursue {value} at this institution.",
+        "Academic programs available here include {value}."
+    ],
+    "COLLEGE_FACULTY": [
+        "The college has a dedicated faculty team including {value}.",
+        "Our faculty members include {value}.",
+        "The teaching staff comprises {value}."
+    ],
+    "UNKNOWN": [
+        "I don't have information on that topic yet.",
+        "That is outside my knowledge for now. Try asking about PyGenicArc or the college.",
+        "I am not sure about that. Could you ask something related to PyGenicArc or the college?"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "faqs": [
+        {
+            "question": "What is PyGenicArc?",
+            "answer": "PyGenicArc is an EdTech startup based in Bengaluru that builds technology solutions for educational institutions."
+        },
+        {
+            "question": "Where is PyGenicArc located?",
+            "answer": "PyGenicArc is located in Bengaluru, Karnataka, India."
+        },
+        {
+            "question": "What workshops does PyGenicArc conduct?",
+            "answer": "We conduct workshops in IoT, Python Programming, Web Development, and Robotics."
+        }
+    ]
+}

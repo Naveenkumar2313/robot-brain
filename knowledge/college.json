@@ -1,0 +1,40 @@
+{
+    "name": "Add college name here",
+    "principal": "Add principal name here",
+    "departments": [
+        "Computer Science",
+        "Electronics and Communication",
+        "Mechanical",
+        "Civil"
+    ],
+    "labs": [
+        "Computer Lab",
+        "Electronics Lab",
+        "IoT Lab"
+    ],
+    "facilities": [
+        "Library",
+        "Seminar Hall",
+        "Cafeteria",
+        "Sports Ground"
+    ],
+    "clubs": [
+        "Coding Club",
+        "Robotics Club"
+    ],
+    "placements": {
+        "rate": "85%",
+        "companies": [
+            "TCS",
+            "Infosys",
+            "Wipro",
+            "Accenture"
+        ],
+        "highest_package": "Add here"
+    },
+    "courses": [
+        "B.E Computer Science",
+        "B.E Electronics and Communication",
+        "MBA"
+    ]
+}

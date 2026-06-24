@@ -1,0 +1,175 @@
+{
+    "intents": {
+        "GREETING": {
+            "keywords": [
+                "hi",
+                "hello",
+                "hey",
+                "good morning",
+                "good afternoon",
+                "good evening",
+                "greetings",
+                "howdy"
+            ]
+        },
+        "GOODBYE": {
+            "keywords": [
+                "bye",
+                "goodbye",
+                "see you",
+                "take care",
+                "farewell",
+                "exit",
+                "quit"
+            ]
+        },
+        "THANK_YOU": {
+            "keywords": [
+                "thank",
+                "thanks",
+                "thank you",
+                "appreciated",
+                "grateful"
+            ]
+        },
+        "COMPANY_NAME": {
+            "keywords": [
+                "what is pygenicarc",
+                "who are you",
+                "your name",
+                "company name",
+                "about pygenicarc"
+            ]
+        },
+        "COMPANY_SERVICES": {
+            "keywords": [
+                "services",
+                "offerings",
+                "provide",
+                "what do you do",
+                "solutions",
+                "offer"
+            ]
+        },
+        "COMPANY_VISION": {
+            "keywords": [
+                "vision",
+                "goal",
+                "aim",
+                "future",
+                "aspire"
+            ]
+        },
+        "COMPANY_MISSION": {
+            "keywords": [
+                "mission",
+                "purpose",
+                "objective",
+                "why pygenicarc"
+            ]
+        },
+        "COMPANY_PRODUCTS": {
+            "keywords": [
+                "products",
+                "platform",
+                "codorythm",
+                "software",
+                "tools",
+                "built"
+            ]
+        },
+        "COMPANY_TEAM": {
+            "keywords": [
+                "founders",
+                "team",
+                "who started",
+                "leadership",
+                "management",
+                "ceo"
+            ]
+        },
+        "WORKSHOPS": {
+            "keywords": [
+                "workshop",
+                "workshops",
+                "training",
+                "sessions",
+                "conduct",
+                "program",
+                "programmes"
+            ]
+        },
+        "COLLEGE_INFO": {
+            "keywords": [
+                "college",
+                "institution",
+                "university",
+                "campus",
+                "school"
+            ]
+        },
+        "COLLEGE_PRINCIPAL": {
+            "keywords": [
+                "principal",
+                "head",
+                "director",
+                "chancellor",
+                "hod"
+            ]
+        },
+        "COLLEGE_DEPARTMENTS": {
+            "keywords": [
+                "departments",
+                "branches",
+                "streams",
+                "department",
+                "branch"
+            ]
+        },
+        "COLLEGE_FACILITIES": {
+            "keywords": [
+                "facilities",
+                "infrastructure",
+                "library",
+                "cafeteria",
+                "sports",
+                "hostel"
+            ]
+        },
+        "COLLEGE_PLACEMENTS": {
+            "keywords": [
+                "placement",
+                "placements",
+                "placed",
+                "recruitment",
+                "hired",
+                "job",
+                "package",
+                "lpa",
+                "salary"
+            ]
+        },
+        "COLLEGE_COURSES": {
+            "keywords": [
+                "courses",
+                "course",
+                "degree",
+                "program",
+                "study",
+                "curriculum"
+            ]
+        },
+        "COLLEGE_FACULTY": {
+            "keywords": [
+                "faculty",
+                "teachers",
+                "professors",
+                "staff",
+                "lecturers"
+            ]
+        },
+        "UNKNOWN": {
+            "keywords": []
+        }
+    }
+}
